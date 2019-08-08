@@ -56,8 +56,7 @@ function show_calendar()
     }
     make_calendar(tmpDate_start, endDate);
 
-    document.querySelector('#calendar').innerHTML = calendarHtml;
+    $('#calendar').html(calendarHtml)
 }
 
-
-show_calendar();
+$(function(){show_calendar();})
